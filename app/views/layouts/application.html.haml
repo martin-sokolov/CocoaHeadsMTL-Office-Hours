@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title CocoaHeads Montréal Office Hours
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:name => "description", :content => "Cocoaheads Montréal Office Hours: We all show up with our laptops and get hacking on our individual projects. When someone has a question (about Cocoa, iOS, OS X, or whatever), they can get help from other participants. Simple!"}/
+    %link{:rel => "image_src", :href => "http://cocoaheadsmtl.com/images/poutine.png"}/
+    
+    %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css", :rel => "stylesheet"}/
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel => "stylesheet"}/
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    /[if lt IE 9]
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  %body
+    = yield
